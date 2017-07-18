@@ -1,0 +1,6 @@
+[submodule "submit"]
+	path = submit
+	url = ssh://git@github.com/towicode/PortalMeHPC_Submit
+[submodule "createKeys"]
+	path = createKeys
+	url = ssh://git@github.com/towicode/PortalMeHPC_CreateKeys
