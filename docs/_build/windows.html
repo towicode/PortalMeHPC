@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Users Guide &mdash; PortalMeHPC 3.0 documentation</title>
+  <title>Uploading your key with Windows &mdash; PortalMeHPC 3.0 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PortalMeHPC 3.0 documentation" href="index.html"/>
-        <link rel="next" title="Generating Keys" href="generating_key.html"/>
-        <link rel="prev" title="Welcome to PortalMeHPC’s documentation!" href="index.html"/> 
+        <link rel="up" title="Users Guide" href="Users_Guide.html"/>
+        <link rel="next" title="Getting Started with IOS" href="ios.html"/>
+        <link rel="prev" title="Users Guide" href="Users_Guide.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,11 +92,10 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Users Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="generating_key.html">Generating Keys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="windows.html">Uploading your key with Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ios.html">Uploading your key with MacOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Uploading your key with Ubuntu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Users_Guide.html">Users Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Uploading your key with Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios.html">Getting Started with IOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Getting Started with Ubuntu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="icommands.html">Setting up ICOMMANDS</a></li>
 </ul>
 </li>
@@ -143,13 +143,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Users Guide</li>
+          <li><a href="Users_Guide.html">Users Guide</a> &raquo;</li>
+        
+      <li>Uploading your key with Windows</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Users_Guide.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/windows.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -162,30 +164,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="users-guide">
-<h1>Users Guide<a class="headerlink" href="#users-guide" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="generating_key.html">Generating Keys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="windows.html">Uploading your key with Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ios.html">Uploading your key with MacOS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">Uploading your key with Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="icommands.html">Setting up ICOMMANDS</a></li>
-</ul>
-</div>
+  <div class="section" id="uploading-your-key-with-windows">
+<h1>Uploading your key with Windows<a class="headerlink" href="#uploading-your-key-with-windows" title="Permalink to this headline">¶</a></h1>
+<p>GIT is a set of tools used by developers to share projects.
+We will not actually be using GIT for this project, but the installer
+contains a useful tool that we will be using.</p>
+<p>To start off visit the <a class="reference external" href="https://git-for-windows.github.io/">git for windows</a> page and download the installer.</p>
+<p>Download the installer.</p>
 <img alt="_images/a.png" src="_images/a.png" />
+<p>Run the installer. Most, if not all, the options we are just going to leave as default)</p>
 <img alt="_images/b.png" src="_images/b.png" />
+<img alt="_images/c.png" src="_images/c.png" />
 <img alt="_images/d.png" src="_images/d.png" />
 <img alt="_images/e.png" src="_images/e.png" />
 <img alt="_images/f.png" src="_images/f.png" />
 <img alt="_images/g.png" src="_images/g.png" />
 <img alt="_images/h.png" src="_images/h.png" />
 <img alt="_images/i.png" src="_images/i.png" />
+<p>Once GIT has been sucesfully installed open the folder where
+you have downloaded your <code class="code docutils literal"><span class="pre">private.key</span></code> and your <code class="code docutils literal"><span class="pre">public.key</span></code> file.</p>
+<p>This is normally in your downloads folder.</p>
 <img alt="_images/j.png" src="_images/j.png" />
+<p>Right click somewhere in the folder and click “Git Bash Here”</p>
 <img alt="_images/k.png" src="_images/k.png" />
+<p>A black windows should pop up, similar to below. this is a terminal. A basic text based interface.</p>
+<p>Next we are going to rename our files so the software can recognize them. To do this we are going to be using the <cite>mv</cite> command.
+Once you are ready type the following into the terminal window. Press the enter key to send commands.</p>
+<p><code class="code docutils literal"><span class="pre">mv</span> <span class="pre">private.key</span> <span class="pre">id_rsa</span></code></p>
+<p><strong>press enter</strong></p>
+<p><code class="code docutils literal"><span class="pre">mv</span> <span class="pre">public.key</span> <span class="pre">id_rsa.pub</span></code></p>
 <img alt="_images/l.png" src="_images/l.png" />
+<p>Finally we are going to run the <code class="code docutils literal"><span class="pre">ssh-copy-id</span></code> command to upload our public key to the server.
+The command takes a few arguments.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>-f Forces the command to attempt to upload</li>
+<li>-i lets up provide our own key (in this case id_rsa.pub)</li>
+<li>the final argument is our <a class="reference external" href="mailto:username&#37;&#52;&#48;hpc&#46;arizona&#46;edu">username<span>&#64;</span>hpc<span>&#46;</span>arizona<span>&#46;</span>edu</a></li>
+</ol>
+</div></blockquote>
+<p>Once you are ready type the following into the terminal window.</p>
+<p><strong>MAKE SURE TO FILL IN YOUR OWN USERNAME BELOW</strong></p>
+<p><code class="code docutils literal"><span class="pre">ssh-copy-id</span> <span class="pre">-f</span> <span class="pre">-i</span> <span class="pre">id_rsa.pub</span> <span class="pre">USERNAME&#64;hpc.arizona.edu</span></code></p>
 <img alt="_images/o.png" src="_images/o.png" />
-<img alt="_images/q.png" src="_images/q.png" />
 </div>
 
 
@@ -198,10 +219,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generating_key.html" class="btn btn-neutral float-right" title="Generating Keys" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ios.html" class="btn btn-neutral float-right" title="Getting Started with IOS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to PortalMeHPC’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Users_Guide.html" class="btn btn-neutral" title="Users Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

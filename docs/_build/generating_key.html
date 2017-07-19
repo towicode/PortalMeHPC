@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Users Guide &mdash; PortalMeHPC 3.0 documentation</title>
+  <title>Generating Keys &mdash; PortalMeHPC 3.0 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PortalMeHPC 3.0 documentation" href="index.html"/>
-        <link rel="next" title="Generating Keys" href="generating_key.html"/>
-        <link rel="prev" title="Welcome to PortalMeHPC’s documentation!" href="index.html"/> 
+        <link rel="up" title="Users Guide" href="Users_Guide.html"/>
+        <link rel="next" title="Uploading your key with Windows" href="windows.html"/>
+        <link rel="prev" title="Users Guide" href="Users_Guide.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,10 +92,10 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Users Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="generating_key.html">Generating Keys</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Users_Guide.html">Users Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Generating Keys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="windows.html">Uploading your key with Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ios.html">Uploading your key with MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios.html">Upload your key with MacOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Uploading your key with Ubuntu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="icommands.html">Setting up ICOMMANDS</a></li>
 </ul>
@@ -143,13 +144,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Users Guide</li>
+          <li><a href="Users_Guide.html">Users Guide</a> &raquo;</li>
+        
+      <li>Generating Keys</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Users_Guide.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/generating_key.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -162,30 +165,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="users-guide">
-<h1>Users Guide<a class="headerlink" href="#users-guide" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="generating_key.html">Generating Keys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="windows.html">Uploading your key with Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ios.html">Uploading your key with MacOS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">Uploading your key with Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="icommands.html">Setting up ICOMMANDS</a></li>
-</ul>
-</div>
-<img alt="_images/a.png" src="_images/a.png" />
-<img alt="_images/b.png" src="_images/b.png" />
-<img alt="_images/d.png" src="_images/d.png" />
-<img alt="_images/e.png" src="_images/e.png" />
-<img alt="_images/f.png" src="_images/f.png" />
-<img alt="_images/g.png" src="_images/g.png" />
-<img alt="_images/h.png" src="_images/h.png" />
-<img alt="_images/i.png" src="_images/i.png" />
-<img alt="_images/j.png" src="_images/j.png" />
-<img alt="_images/k.png" src="_images/k.png" />
-<img alt="_images/l.png" src="_images/l.png" />
-<img alt="_images/o.png" src="_images/o.png" />
-<img alt="_images/q.png" src="_images/q.png" />
+  <div class="section" id="generating-keys">
+<h1>Generating Keys<a class="headerlink" href="#generating-keys" title="Permalink to this headline">¶</a></h1>
+<p>Load up the discovery environment and search for “PortalMe”. You should see atleast two apps come up. Click the one that ends with “Create Keys”.</p>
+<img alt="_images/1.png" src="_images/1.png" />
+<p>From here a window should pop up. The first step is to name the analysis. The name here isn’t too important but I normally give it a name that is easy to identify later. After you name it, expand the
+Key Generation section.</p>
+<img alt="_images/2.png" src="_images/2.png" />
+<p>Here you are given the option of renaming your public and private key. Take notice of the name, but don’t change the name for now.
+Finally click “Launch Analysis”. <strong>This will take some time</strong></p>
+<img alt="_images/4.png" src="_images/4.png" />
+<p>You should immediately notice that the notification menu in the top right has a red circle by it, This is to indicate that your app has launched. Wait for the notifications menu to contain the “Completed” line before continuing.</p>
+<img alt="_images/5.png" src="_images/5.png" />
+<dl class="docutils">
+<dt>Next we are going to download our SSH keys to our local machine. Clear out all windows and head back to the home screen.</dt>
+<dd><ol class="first arabic simple">
+<li>Press Data</li>
+<li>Expand your User folder.</li>
+<li>Expand your Analysis folder.</li>
+</ol>
+<p class="last">4. Find and open the folder you created. In my case it’s called aaa_generated_keys.
+<em>ignore 5 &amp; 6 they are covered in the next step</em></p>
+</dd>
+</dl>
+<img alt="_images/6.png" src="_images/6.png" />
+<img alt="_images/7.png" src="_images/7.png" />
+<p>Select both the private and the public key, then click download and do a simple download.</p>
+<img alt="_images/8.png" src="_images/8.png" />
+<p>Finall click to download both of these files. Take a mental note of where you are downloading them to!</p>
+<img alt="_images/9.png" src="_images/9.png" />
 </div>
 
 
@@ -198,10 +206,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generating_key.html" class="btn btn-neutral float-right" title="Generating Keys" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="windows.html" class="btn btn-neutral float-right" title="Uploading your key with Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to PortalMeHPC’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Users_Guide.html" class="btn btn-neutral" title="Users Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
