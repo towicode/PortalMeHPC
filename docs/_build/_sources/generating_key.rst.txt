@@ -25,6 +25,7 @@ Next we are going to download our SSH keys to our local machine. Clear out all w
     2. Expand your User folder.
     3. Expand your Analysis folder.
     4. Find and open the folder you created. In my case it's called aaa_generated_keys.
+   
     *ignore 5 & 6 they are covered in the next step*
 
 .. image:: images/6.png

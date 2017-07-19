@@ -51,9 +51,10 @@ Once you are ready type the following into the terminal window. Press the enter 
 
 Finally we are going to run the :code:`ssh-copy-id` command to upload our public key to the server.
 The command takes a few arguments.
-    1. -f Forces the command to attempt to upload
-    2. -i lets up provide our own key (in this case id_rsa.pub)
-    3. the final argument is our username@hpc.arizona.edu
+
+   1. -f Forces the command to attempt to upload
+   2. -i lets up provide our own key (in this case id_rsa.pub)
+   3. the final argument is our username@hpc.arizona.edu
 
 Once you are ready type the following into the terminal window.
 
