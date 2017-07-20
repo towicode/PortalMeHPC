@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+include:
+  _build
+  _static
+  _templates
+  _images
+  _sources
+  
